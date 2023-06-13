@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฝึกหัด JavaScript</title>
+    <style>
+    .centerg{
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body >
+    <p>ข้อที่ 1</p>
+    <h1 class="centerg" id="header">สวัสดีชาวโลก</h1>
+    <div class="centerg"><button type="button" onclick="document.getElementById('header').style.color='red'">เปลี่ยนสี </button></div>
+    
+<p>ข้อ2</p>
+    <h2>วันที่และเวลาปัจจุบัน</h2>
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    แสดงวันที่และเวลาปัจจุบัน</button>
+
+    <p id="demo"></p>
+<p>
+
+</p>
+    <p>ข้อ3</p>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button onclick="document.getElementById('myImage').src='images/Idle.png'">แมวยืน</button>
+
+    <img id="myImage" src='images/Idle.png' width=50%>
+
+    <button onclick="document.getElementById('myImage').src='images/Slide.png'">แมวสไลด์</button>
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  <style>
+    h1{
+        background-color: aquamarine;
+    }
+    .canter {
+        text-align: center;
+    }
+  </style>
+</head>
+  <body>
+    <h1 class="canter">Hello, world!khgiuguim </h1>
+    <div>โปรซัน  yai mak mak </div>
+    <p class="canter" ></p><img src=data:image/jpeg;base64,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 ></p>
+    
+    <a href="https://www.youtube.com/watch?v=RgGwB-nNxII" target="_blank"> YaiMakMak</a>
+    <table >
+        <tr>
+            <td>ข้าว</td>
+            <tr>
+                <td>ข้าวใส่จาน</td>
+            </tr>
+                
+        </tr>
+        <tr>
+
+            <td>น้ำ</td>
+            <tr>
+                <td>น้ำใส่จาน</td>
+            </tr>
+        </tr>
+        <tr>
+            <td>มะม่วง</td>
+            <tr>
+                <td>มะม่วงไม่มัน</td>
+            </tr>
+        </tr>
+        <tr>
+            <td>น้ำไม่หมาน</td>
+            <tr>
+                <td>น้ำกินแล้วหมาน</td>
+            </tr>
+        </tr>
+    </table>
+   
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html> -->
+
